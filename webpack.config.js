@@ -8,12 +8,12 @@ module.exports = {
     filename: 'main.js'
   },
   resolve: {
-    extension:['.js'],
+    extensions:['.js'],
   },
   module: {
     rules: [
       {
-        test:/\.js?$/,
+        test: /\.js?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
